@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Country</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- *********************************for google fonts************************************* -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800,900,"
+      rel="stylesheet"
+    />
+    <!-- *********************************for google fonts************************************* -->
+
+    <!-- ******************************font awsome********************************************* -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ******************************font awsome********************************************* -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="head_Content Max_wid_Con">
+        <h2><a href="/">Where in the world?</a></h2>
+        <div class="modes" id="modes">
+          <i class="fa-regular fa-moon" id="moon"></i>&nbsp;&nbsp;
+          <p id="para">Dark Mode</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="search_Container Max_wid_Con">
+        <div class="sBox">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search by country name..." />
+        </div>
+
+        <div class="Regions">
+          <select class="S-Regions">
+            <option hidden>Filter by regions</option>
+            <option value="America">America</option>
+            <option value="Africa">Africa</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+            <option value="Asia">Asia</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="Country_container Max_wid_Con">
+        <!-- <a href="#" class="CountryCard">
+          <img src="https://flagcdn.com/sl.svg" alt="flag" />
+          <div class="country_text">
+            <h3 class="country_Title">German</h3>
+            <div class="country_items">
+              <p><b>Population:</b> 1351561515</p>
+              <p><b>Region:</b> Asia</p>
+              <p><b>Capital:</b> KAthmandu</p>
+            </div>
+          </div>
+        </a> -->
+      </div>
+    </main>
+
+    <div class="BackTo-top">
+      <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

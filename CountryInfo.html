@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Info</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="countryInfo.css" />
+    <!-- *********************************for google fonts************************************* -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800,900,"
+      rel="stylesheet"
+    />
+    <!-- *********************************for google fonts************************************* -->
+
+    <!-- ******************************font awsome********************************************* -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header ">
+      <div class="head_Content Max_wid_Con">
+        <h2><a href="/">Where in the world?</a></h2>
+        <div class="modes" id="modes">
+          <i class="fa-regular fa-moon" id="moon"></i>&nbsp;&nbsp;
+          <p id="para">Dark Mode</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="ContainerM">
+      <div class="C_items Max_wid_Con">
+        <p class="back_button">
+          <i class="fa-solid fa-arrow-left-long"></i>&nbsp;&nbsp;Back
+        </p>
+        <div class="Country_context">
+          <div class="cFlag">
+            <img src="https://flagcdn.com/is.svg" alt="flag" />
+          </div>
+
+          <div class="country_data">
+            <h2 class="CName"></h2>
+
+            <div class="CD_in">
+              <div class="innerData">
+                <p><b>Native Name:</b> <span class="native"></span></p>
+                <p><b>Population:</b> <span class="population"></span></p>
+                <p><b>Region:</b> <span class="region"></span></p>
+                <p><b>Sub region:</b> <span class="subRegion"></span></p>
+                <p><b>Capital:</b> <span class="Capital"></span></p>
+                <p>
+                  <b>Top Level Domain:</b> <span class="topLevelDomain"></span>
+                </p>
+                <p><b>Currencies:</b> <span class="Currencies"></span></p>
+                <p><b>Languages:</b> <span class="Language"></span></p>
+              </div>
+
+              <div class="border_Countries">
+                <p class="bCon"><b>Border Countries:</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="CountryInfo.js"></script>
+  </body>
+</html>
