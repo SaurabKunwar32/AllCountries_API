@@ -4,8 +4,6 @@ const Country_container = document.querySelector(".Country_container");
 const RegionsData = document.querySelector(".S-Regions");
 const BackTotop = document.querySelector(".BackTo-top");
 const inputSer = document.querySelector(".sBox input");
-const darkTheme = document.getElementById("dark");
-const IconChange = document.querySelector(".modes");
 
 let allData;
 
@@ -67,26 +65,6 @@ RegionsData.addEventListener("change", (e) => {
       renderDataOfCountries(regionCountry);
       // console.log(regionCountry);
     });
-});
-
-
-// For modes
-IconChange.addEventListener("click", () => {
-
-  document.body.classList.toggle('dark-Theme')
-  // For the icons
-  const icons = document.getElementById("moon");
-  icons.classList.toggle("fa-sun");
-  icons.classList.toggle("fa-moon");
-
-
-  // For the paragraph
-  const para = document.getElementById("para");
-  if (para.innerText === "Dark Mode") {
-    para.innerText = "Light Mode";
-  } else {
-    para.innerText = "Dark Mode";
-  }
 });
 
 

@@ -11,8 +11,6 @@ const topLevelDomain = document.querySelector(".topLevelDomain");
 const Currencies = document.querySelector(".Currencies");
 const Language = document.querySelector(".Language");
 const bCon = document.querySelector(".bCon");
-const Mode = document.querySelector(".modes");
-const IconChange = document.querySelector(".modes");
 
 
 const C_URL = `https://restcountries.com/v3.1/name/${Countryname}?fullText=true`;
@@ -73,28 +71,5 @@ back_button.addEventListener("click", () => {
 });
 
 
-Mode.addEventListener("click", () => {
-  document.body.classList.toggle("darkM");
-});
 
-
-
-// For modes
-IconChange.addEventListener("click", () => {
-
-  document.body.classList.toggle('dark-Theme')
-  // For the icons
-  const icons = document.getElementById("moon");
-  icons.classList.toggle("fa-sun");
-  icons.classList.toggle("fa-moon");
-
-
-  // For the paragraph
-  const para = document.getElementById("para");
-  if (para.innerText === "Dark Mode") {
-    para.innerText = "Light Mode";
-  } else {
-    para.innerText = "Dark Mode";
-  }
-});
 

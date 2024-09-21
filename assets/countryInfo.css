@@ -3,14 +3,14 @@
   --textColor: black;
 }
 
-.darkM {
-  --backgroundColor-color: hsl(207, 26%, 17%);
-  --textColor: white;
-}
-
 body {
   background: var(--backgroundColor-color);
   color: var(--textColor);
+}
+
+body.darkM {
+  --backgroundColor-color: hsl(207, 26%, 17%);
+  --textColor: white;
 }
 
 .ContainerM {

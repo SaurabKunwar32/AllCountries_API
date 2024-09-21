@@ -8,6 +8,7 @@
 body {
   font-family: Nunito, sans-serif;
   background: var(--backgroundColor);
+  color: var(--color);
 }
 
 :root {
@@ -16,10 +17,10 @@ body {
   --color:black;
 }
 
-.dark-Theme {
+body.dark {
   --backgroundColor: hsl(207, 26%, 17%);
   --boxColor: hsl(209, 23%, 22%);
-  color: white;
+  --color:white;
 }
 
 a {
