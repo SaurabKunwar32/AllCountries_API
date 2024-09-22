@@ -7,6 +7,7 @@ const inputSer = document.querySelector(".sBox input");
 
 let allData;
 
+// Fetching the data
 fetch(COUNTRY_URL)
   .then((response) => response.json())
   .then((data) => {
@@ -14,6 +15,8 @@ fetch(COUNTRY_URL)
     allData = data;
   });
 
+
+// Creating the boxes for each country
 function renderDataOfCountries(data) {
   Country_container.innerHTML = "";
   data.forEach((country) => {
@@ -39,6 +42,8 @@ function renderDataOfCountries(data) {
   });
 }
 
+
+// For Searching by country name
 inputSer.addEventListener("input", (e) => {
   // console.log(e.target.value);
   // console.log(allData);
@@ -49,6 +54,7 @@ inputSer.addEventListener("input", (e) => {
   renderDataOfCountries(searchData);
 });
 
+// For Key Press
 // inputSer.addEventListener('keydown',(e)=>{
 //   if(e.key === "Enter"){
 //     e.preventDefault();
@@ -56,6 +62,8 @@ inputSer.addEventListener("input", (e) => {
 //   }
 // })
 
+
+// For selected Regions
 RegionsData.addEventListener("change", (e) => {
   // console.log(e.target.value);
   fetch(`https://restcountries.com/v3.1/region/${e.target.value}`)
@@ -66,6 +74,7 @@ RegionsData.addEventListener("change", (e) => {
       // console.log(regionCountry);
     });
 });
+
 
 
 // For the scroll

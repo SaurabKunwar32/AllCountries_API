@@ -1,4 +1,6 @@
+// Obtaining the Countryname from the query String which is passed from script.js
 const Countryname = new URLSearchParams(location.search).get("name");
+
 const back_button = document.querySelector(".back_button");
 const cflag = document.querySelector(".cFlag img");
 const cname = document.querySelector(".CName");
@@ -12,9 +14,10 @@ const Currencies = document.querySelector(".Currencies");
 const Language = document.querySelector(".Language");
 const bCon = document.querySelector(".bCon");
 
-
 const C_URL = `https://restcountries.com/v3.1/name/${Countryname}?fullText=true`;
 
+
+// Fetching the data 
 fetch(C_URL)
   .then((response) => response.json())
   .then(([cdata]) => {
@@ -65,11 +68,9 @@ fetch(C_URL)
     }
   });
 
-  
+
+
+// For back button
 back_button.addEventListener("click", () => {
   history.back();
 });
-
-
-
-
