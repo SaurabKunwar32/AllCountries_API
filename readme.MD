@@ -6,4 +6,4 @@ API: https://restcountries.com
 
 This shows the data of all countries in the world.
 
-Check:https://saurabkunwar32.github.io/AllCountries_API
+Check:https://all-countryapi.netlify.app
