@@ -54,13 +54,7 @@ inputSer.addEventListener("input", (e) => {
   renderDataOfCountries(searchData);
 });
 
-// For Key Press
-// inputSer.addEventListener('keydown',(e)=>{
-//   if(e.key === "Enter"){
-//     e.preventDefault();
-//     inputSer.value='';
-//   }
-// })
+
 
 
 // For selected Regions
